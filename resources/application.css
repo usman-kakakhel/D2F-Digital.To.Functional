@@ -1,0 +1,345 @@
+.dragicon {
+	-fx-background-radius: 10;
+}
+
+.cubic-icon {
+	-fx-fill:
+	rgba(80.0, 80.0, 80.0, 0.0);
+	
+	-fx-stroke: black;
+}
+
+.node-overlay {
+	-fx-background-radius: 10 10 0 0;
+	-fx-background-color:
+	linear-gradient(to bottom, rgba(255,255,255,0.7) 15%, rgba(50,100,150,0.45) 100%);
+	
+}
+
+.right-link-handle:hover {
+	-fx-background-radius: 0 0 10 0;
+	-fx-background-color:
+	rgba(255, 255, 255, 0.0);
+}
+
+.left-link-handle:hover {
+	-fx-background-radius: 0 0 0 10;
+	-fx-background-color:
+	rgba(255, 255, 255, 0.0);
+}
+
+.icon-and {
+	-fx-background-image: url(/Image/and.png);
+}
+
+.icon-or {
+	-fx-background-image: url(/Image/or.png);
+}
+
+.icon-not {
+	-fx-background-image: url(/Image/not.png);
+}
+
+.icon-xor {
+	-fx-background-image: url(/Image/xor.png);
+}
+
+.icon-nand {
+	-fx-background-image: url(/Image/nand.png);
+}
+
+.icon-nor {
+	-fx-background-image: url(/Image/nor.png);
+}
+
+
+.icon-input {
+    -fx-background-image: url(/Image/in.png);
+}
+
+.icon-inputOn {
+    -fx-background-image: url(/Image/inOn.png);
+}
+
+.icon-output {
+-fx-background-image: url(/Image/out.png);
+}
+
+.icon-outputOn {
+-fx-background-image: url(/Image/outOn.png);
+}
+
+.icon-clock {
+-fx-background-image: url(/Image/clock.png);
+}
+
+.icon-splitter {
+-fx-background-image: url(/Image/splitter.png);
+}
+
+.icon-half_adder {
+-fx-background-image: url(/Image/half.png);
+}
+
+.icon-full_adder {
+-fx-background-image: url(/Image/full.png);
+}
+
+.icon-JK {
+-fx-background-image: url(/Image/jk.png);
+}
+
+.icon-SR {
+-fx-background-image: url(/Image/sr.png);
+
+}
+
+.icon-T {
+-fx-background-image: url(/Image/t.png);
+}
+
+.icon-D {
+-fx-background-image: url(/Image/d.png);
+}
+
+
+// SCROLL BAR
+
+.scroll-bar > .thumb{
+    -fx-background-color: #38a61e;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar > .thumb:pressed {
+    -fx-background-color: #1e1e1e;
+}
+
+.scroll-bar > .track {
+    -fx-background-color: #4a4a4a;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.scroll-bar > .track-background {
+    -fx-background-color: #4a4a4a;
+    -fx-background-insets: 0;
+}
+
+.scroll-bar > .increment-button,
+.scroll-bar > .decrement-button {
+    -fx-background-color: #4a4a4a;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+
+    -fx-padding: 0.25em; /* 3 */
+}
+
+.scroll-bar > .increment-button:hover,
+.scroll-bar > .decrement-button:hover  {
+    -fx-background-color: #38a61e;
+}
+
+.scroll-bar > .increment-button:pressed,
+.scroll-bar > .decrement-button:pressed {
+    -fx-background-color: #1e1e1e;
+}
+
+.scroll-bar > .decrement-button > .decrement-arrow,
+.scroll-bar > .increment-button > .increment-arrow{
+    -fx-background-color: transparent, #1e1e1e;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-effect: null;
+}
+
+.scroll-bar > .increment-button:pressed > .increment-arrow,
+.scroll-bar > .decrement-button:pressed > .decrement-arrow {
+    -fx-background-color: transparent, white;
+    -fx-effect: null;
+}
+
+.scroll-bar:vertical > .increment-button > .increment-arrow,
+.scroll-bar:vertical > .decrement-button > .decrement-arrow {
+    -fx-padding: 0.333333em 0.5em 0.0em 0.0em; /* 4 6 0 0 */
+}
+
+.scroll-bar:horizontal > .increment-button > .increment-arrow,
+.scroll-bar:horizontal > .decrement-button > .decrement-arrow {
+    -fx-padding: 0.5em 0.333333em 0.0em 0.0em; /* 6 4 0 0 */
+}
+
+
+.scroll-bar:disabled {
+    -fx-opacity: 0.4;
+}
+
+/* ARROW SHAPES */
+.scroll-bar:horizontal > .increment-button > .increment-arrow {
+    -fx-shape: "M7.626,12.876L4.251,8.751H7.14L11,12.876L7.14,17H4.251L7.626,12.876z";
+}
+
+.scroll-bar:horizontal > .decrement-button > .decrement-arrow {
+    -fx-shape: "M11,17H8.111l-3.86-4.124l3.86-4.125H11l-3.375,4.125L11,17z";
+}
+
+.scroll-bar:vertical > .increment-button > .increment-arrow {
+    -fx-shape: "M8.124,13.625l4.125-3.375v2.889l-4.125,3.86L4,13.139V10.25L8.124,13.625z";
+}
+
+.scroll-bar:vertical > .decrement-button > .decrement-arrow {
+    -fx-shape: "M4,17v-2.889l4.124-3.86l4.125,3.86V17l-4.125-3.375L4,17z";
+}
+
+// TITLED PANE
+
+.titled-pane
+{
+-fx-text-fill: -fx-text-base-color;
+-fx-animated: true;
+}
+.titled-pane:focused
+{
+-fx-text-fill: #222222;
+}
+.titled-pane > .title
+{
+-fx-color: #38A61E;
+ -fx-background-radius: 0, 0, 0;
+    -fx-font: bold 14px System;
+    -fx-padding: 0.3em 0.833333em 0.35em 0.833333em;
+}
+
+.titled-pane:focused > .title
+{
+-fx-color: #38A61E;
+}
+
+.titled-pane > .title > .arrow-button
+{
+-fx-background-color: null;
+-fx-background-insets: 0;
+-fx-background-radius: 0;
+-fx-padding: 0.0em 0.25em 0.0em 0.0em; /* 0 3 0 0 */
+}
+
+.titled-pane > .title > .arrow-button .arrow
+{
+-fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+-fx-background-insets: 0 0 0 0, 0;
+-fx-padding: 0.25em 0.3125em 0.25em 0.3125em; /* 3 3.75 3 3.75 */
+-fx-shape: "M 0 0 h 7 l -3.5 4 z";
+}
+
+.titled-pane:collapsed > .title > .arrow-button .arrow
+{
+-fx-rotate: -90;
+}
+
+.titled-pane > *.content
+{
+-fx-background-color: #222222;
+-fx-background-insets: 100, 100 100 100 100;
+-fx-padding: 0em;
+ }
+
+ .titled-pane:focused > .title > .arrow-button
+ {
+ -fx-background-color: null;
+ }
+
+
+// SPLIT PANE
+.split-pane-divider {
+    -fx-padding: 0 0 0 0 ;
+    -fx-border-width: 0px;
+    -fx-background-color: #222222 ;
+    -fx-background-insets: 0;
+}
+
+// Menu BAR
+
+/* VARIABLE DEFINITIONS: Only these 4 variables have to be adjusted, the rest is copy-paste */
+* {
+    -fx-my-menu-color: #333333;                  /* Change according to your needs */
+    -fx-my-menu-color-highlighted: #38a61e;      /* Change according to your needs */
+    -fx-my-menu-font-color: #ffffff;             /* Change according to your needs */
+    -fx-my-menu-font-color-highlighted: #FFFFFF; /* Change according to your needs */
+}
+
+/* MENU BAR + Top-level MENU BUTTONS */
+/*** The menu bar itself ***/
+.menu-bar {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+/*** Top-level menu itself (not selected / hovered) ***/
+.menu-bar > .container > .menu-button {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+/*** Top-level menu's label (not selected / hovered) ***/
+.menu-bar > .container > .menu-button > .label {
+    -fx-text-fill: -fx-my-menu-font-color;
+}
+
+/*** Top-level menu's label (disabled) ***/
+.menu-bar > .container > .menu-button > .label:disabled {
+    -fx-opacity: 1.0;
+}
+
+/*** Top-level menu itself (selected / hovered) ***/
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: -fx-my-menu-color-highlighted;
+}
+
+/*** Top-level menu's label (selected / hovered) ***/
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing > .label {
+    -fx-text-fill: -fx-my-menu-font-color-highlighted;
+}
+
+/* MENU ITEM (children of a MENU BUTTON) */
+/*** The item itself (not hovered / focused) ***/
+.menu-item {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+/*** The item's label (not hovered / focused) ***/
+.menu-item .label {
+    -fx-text-fill: -fx-my-menu-font-color;
+}
+
+/*** The item's label (disabled) ***/
+.menu-item .label:disabled {
+    -fx-opacity: 1.0;
+}
+
+/*** The item itself (hovered / focused) ***/
+.menu-item:focused, .menu-item:hovered {
+    -fx-background-color: -fx-my-menu-color-highlighted;
+}
+
+/*** The item's label (hovered / focused) ***/
+.menu-item:focused .label, .menu-item:hovered .label {
+    -fx-text-fill: -fx-my-menu-font-color-highlighted;
+}
+
+/* CONTEXT MENU */
+/*** The context menu that contains a menu's menu items ***/
+.context-menu {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+// BUTTON
+.button {
+-fx-background-color: #38a61e;
+-fx-background-insets: 0, 1;
+-fx-text-fill: #222222;
+}
+
+
+.StackPane{
+  -fx-background-color: #222222;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="root_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" styleClass="dragicon" stylesheets="@application.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox layoutX="1.0" prefHeight="100.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="71.0" prefWidth="82.0">
+                    <children>
+                        <AnchorPane fx:id="left_link_handle" maxWidth="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="61.0" prefWidth="35.0" style="-fx-background-color: #000000;" styleClass="left-link-handle">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="right_link_handle" maxWidth="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="53.0" prefWidth="38.0" style="-fx-background-color: #000000;" styleClass="right-link-handle">
+                            <HBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </HBox.margin>
+                        </AnchorPane>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+        <AnchorPane fx:id="title_bar_anchor" layoutY="-2.0" prefHeight="100.0" prefWidth="100.0" visible="false">
+            <children>
+                <Label fx:id="title_bar" opacity="0.0" prefHeight="63.0" prefWidth="70.0" style="-fx-background-color: #000000;" textFill="#f80000">
+               <font>
+                  <Font size="28.0" />
+               </font></Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="cross_something_pane" layoutX="15.0" layoutY="35.0" prefHeight="50.0" prefWidth="71.0" styleClass="dragicon" stylesheets="@application.css" visible="false" />
+        <Label fx:id="close_button" alignment="TOP_RIGHT" layoutX="66.0" layoutY="22.0" opacity="0.0" prefHeight="18.0" prefWidth="22.0" text="X" textFill="RED">
+            <padding>
+                <Insets right="10.0" />
+            </padding>
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</fx:root>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="root_pane" maxHeight="840.0" maxWidth="1600.0" minHeight="200.0" minWidth="200.0"
+         stylesheets="@application.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.121"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+
+        <AnchorPane fx:id="base_anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                    minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920">
+            <children>
+
+
+                <SplitPane fx:id="base_pane" dividerPositions="0.0" layoutY="78.0" prefHeight="1002.0" prefWidth="1920"
+                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="78.0">
+                    <items>
+
+
+                        <AnchorPane fx:id="left_anchor_pane" maxWidth="295" prefHeight="860.0" prefWidth="295.0">
+                            <children>
+                                <ImageView fitHeight="1120.0" fitWidth="314.0" layoutX="-8.0" layoutY="-329.0"
+                                           pickOnBounds="true" preserveRatio="true" smooth="false"
+                                           AnchorPane.bottomAnchor="211.39999999999998" AnchorPane.leftAnchor="-8.0"
+                                           AnchorPane.rightAnchor="-2.7259338378906364" AnchorPane.topAnchor="-329.0">
+                                    <image>
+                                        <Image url="/Image/left.jpeg"/>
+                                    </image>
+                                </ImageView>
+
+                                <VBox fx:id="component_menu" prefWidth="295.0">
+
+                                    <TitledPane fx:id="basicGates_TitledPane" animated="false" maxHeight="250"
+                                                style="-fx-background-color: #222222;" text="Basic Gates">
+                                        <content>
+                                            <AnchorPane fx:id="inside_BasicGates_anchorPane" minHeight="0.0"
+                                                        minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+                                            <ScrollPane fitToHeight="true" hbarPolicy="NEVER" maxWidth="-Infinity"
+                                                        minWidth="-Infinity" prefWidth="290.0"
+                                                        style="-fx-background-color: #222222;">
+                                                <padding>
+                                                    <Insets bottom="6.0" left="8.0" top="6.0"/>
+                                                </padding>
+                                                <content>
+                                                    <AnchorPane>
+                                                        <VBox fx:id="left_pane" spacing="10.0"
+                                                              style="-fx-background-color: #222222;"/>
+                                                    </AnchorPane>
+
+                                                </content>
+                                            </ScrollPane>
+                                        </content>
+                                    </TitledPane>
+                                    <TitledPane fx:id="memory_TitledPane" animated="false" maxHeight="150"
+                                                text="Memory">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                                        prefWidth="200.0"/>
+                                            <ScrollPane fitToHeight="true" hbarPolicy="NEVER" maxWidth="-Infinity"
+                                                        minWidth="-Infinity" prefWidth="290.0"
+                                                        style="-fx-background-color: #222222;">
+                                                <padding>
+                                                    <Insets bottom="6.0" left="8.0" top="6.0"/>
+                                                </padding>
+                                                <content>
+                                                    <AnchorPane>
+                                                        <VBox fx:id="left_pane1" spacing="10.0"
+                                                              style="-fx-background-color: #222222;"/>
+                                                    </AnchorPane>
+                                                </content>
+                                            </ScrollPane>
+                                        </content>
+                                    </TitledPane>
+                                    <TitledPane fx:id="adders_TitledPane" animated="false" maxHeight="148.0"
+                                                prefWidth="198.0" text="Adders">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="140.0"
+                                                        prefWidth="197.0"/>
+                                            <ScrollPane fitToHeight="true" hbarPolicy="NEVER" maxWidth="-Infinity"
+                                                        minWidth="-Infinity" prefWidth="290.0"
+                                                        style="-fx-background-color: #222222;">
+                                                <padding>
+                                                    <Insets bottom="6.0" left="8.0" top="6.0"/>
+                                                </padding>
+                                                <content>
+                                                    <AnchorPane>
+                                                        <VBox fx:id="left_pane2" spacing="10.0"
+                                                              style="-fx-background-color: #222222;"/>
+                                                    </AnchorPane>
+                                                </content>
+                                            </ScrollPane>
+                                        </content>
+                                    </TitledPane>
+                                    <TitledPane fx:id="prop_TitledPane" animated="false" maxHeight="150.0"
+                                                text="Properties" visible="false">
+                                        <content>
+                                            <AnchorPane style="-fx-background-color: #222222;">
+                                                <padding>
+                                                    <Insets bottom="-1.0" left="0.0" right="-6.0" top="0"/>
+                                                </padding>
+                                                <children>
+                                                    <VBox fx:id="left_pane3" spacing="10.0"
+                                                          style="-fx-background-color: #222222;"/>
+                                                </children>
+                                            </AnchorPane>
+                                        </content>
+                                    </TitledPane>
+                                    <TitledPane fx:id="labl_TitledPane" animated="false" maxHeight="150.0" text="Label"
+                                                visible="false">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                                        prefWidth="200.0" style="-fx-background-color: #222222;"/>
+                                            <ScrollPane fitToHeight="true" hbarPolicy="NEVER" maxWidth="-Infinity"
+                                                        minWidth="-Infinity" prefWidth="290.0"
+                                                        style="-fx-background-color: #222222;">
+                                                <padding>
+                                                    <Insets bottom="6.0" left="8.0" top="6.0"/>
+                                                </padding>
+                                                <content>
+                                                    <AnchorPane>
+                                                        <VBox fx:id="left_pane4" prefHeight="71.0" prefWidth="280.0"
+                                                              spacing="0.0" style="-fx-background-color: #222222;">
+                                                            <children>
+                                                                <TextArea fx:id="label_Text" prefHeight="200.0"
+                                                                          prefWidth="200.0" promptText="Enter The Label"
+                                                                          wrapText="true">
+                                                                    <font>
+                                                                        <Font name="Arial" size="12.0"/>
+                                                                    </font>
+                                                                </TextArea>
+                                                            </children>
+                                                        </VBox>
+                                                    </AnchorPane>
+                                                </content>
+                                            </ScrollPane>
+                                        </content>
+                                    </TitledPane>
+
+                                </VBox>
+
+                            </children>
+                        </AnchorPane>
+
+                        <AnchorPane fx:id="right_anchor_pane" layoutY="50.0" prefHeight="860.0" prefWidth="1618.0"
+                                    style="-fx-background-color: #222222;">
+                            <children>
+                                <ScrollPane fitToHeight="true" hbarPolicy="ALWAYS" maxHeight="-Infinity"
+                                            maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                            prefHeight="723.0" prefWidth="1240.0"
+                                            style="-fx-background-color:transparent;" styleClass="edge-to-edge"
+                                            vbarPolicy="ALWAYS">
+                                    <content>
+                                        <AnchorPane fx:id="right_pane" layoutX="41.0" layoutY="7.0"
+                                                    maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0"
+                                                    minWidth="1500.0" style="-fx-background-color: #222222;"
+                                                    AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0"/>
+                                    </content>
+
+                                </ScrollPane>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+
+                <AnchorPane layoutY="25.0" prefHeight="50.0" prefWidth="1920.0" style="-fx-background-color: #222222;">
+                    <children>
+                        <ImageView fx:id="run" fitHeight="50.0" fitWidth="80.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="/Image/run.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="remove" fitHeight="49.0" fitWidth="76.0" layoutX="78.0" layoutY="1.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/Image/remove.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="select" fitHeight="50.0" fitWidth="79.0" layoutX="154.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="/Image/select.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="label" fitHeight="50.0" fitWidth="78.0" layoutX="231.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="/Image/label.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="reset" fitHeight="49.0" fitWidth="78.0" layoutX="309.0" layoutY="1.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/Image/reset.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="btb" fitHeight="53.0" fitWidth="187.0" layoutX="387.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="/Image/btb.png"/>
+                            </image>
+                        </ImageView>
+                        <TextField fx:id="bool_Text" layoutX="575.0" layoutY="6.0" prefHeight="40.0" prefWidth="950.0"
+                                   promptText="Enter the boolean statement" visible="false"
+                                   AnchorPane.topAnchor="6.0"/>
+                    </children>
+                </AnchorPane>
+
+
+                <AnchorPane fx:id="toolBar" layoutY="25.0" prefHeight="50.0" prefWidth="1920.0"
+                            style="-fx-background-color: #222222;" visible="false">
+                    <children>
+                        <ImageView fx:id="edit" fitHeight="50.0" fitWidth="78.0" pickOnBounds="true"
+                                   preserveRatio="true" scaleZ="-6.0">
+                            <image>
+                                <Image url="/Image/edit.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="truthTable" fitHeight="49.0" fitWidth="116.0" layoutX="78.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/Image/tt.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="simplify" fitHeight="50.0" fitWidth="113.0" layoutX="194.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/Image/sc.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+
+                <MenuBar prefHeight="0.0" prefWidth="2000.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem fx:id="load_Item" mnemonicParsing="false" text="Open…"/>
+                                <MenuItem fx:id="save_Item" mnemonicParsing="false" text="Save As…"/>
+                                <SeparatorMenuItem mnemonicParsing="false"/>
+                                <MenuItem fx:id="quit" mnemonicParsing="false" text="Quit"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Information">
+                            <items>
+                                <MenuItem fx:id="comp_Menu" mnemonicParsing="false" text="Components Guide"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem fx:id="info_Menu" mnemonicParsing="false" text="General Help"/>
+                                <MenuItem fx:id="about_Menu" mnemonicParsing="false" text="Contact Support"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+
+            </children>
+        </AnchorPane>
+    </children>
+</fx:root>
