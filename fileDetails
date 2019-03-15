@@ -1,0 +1,3 @@
+The folders present are recources and src. Resources has all the FXML and css files for the GUI and src has the GUI images and 
+source files containing the JAVA code. Anyone wishing to use this project has to combine these folders in their own project to bring 
+it into a working form.
